@@ -56,6 +56,8 @@ table {
 
 body {
 	background-color: lightgray;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
 }
 
 .content {
@@ -140,19 +142,28 @@ body {
 	line-height: 1.33;
 }
 
-/* Three icons section*/
+/* Three cases section*/
 
-.icons {
+.cases {
 	background-color: white;
 	background-size: cover;
+	overflow: hidden;
+	padding-bottom: 5rem;
 }
-
-.icons h1 {
+.cases .content{
+	margin-top: 7.875rem;
+}
+.cases h2 {
+	font-size: 2.75rem;
+	margin: 1.625rem 0 3.125rem;
+	font-weight: 300;
 	text-align: center;
-	font-size: 2.7rem;
-	margin-top: 8rem;
 }
-
+.cases .pictures h3 {
+	font-weight: 400;
+	font-size: 1.563rem;
+	margin: 2.5rem 0px 1.875rem;
+}
 .pictures li {
 	display: inline-block;
 	padding: 0.5rem;
