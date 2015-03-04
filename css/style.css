@@ -179,6 +179,25 @@ body {
 	margin: 0 auto;
 }
 
+/*Footer Section*/
+
+.footer {
+	background-color: white;
+	background-size: cover;
+	border-style: solid;
+	border-top-width: 1px;
+	padding-bottom: 7rem;
+	padding-top: 7rem;
+}
+.footer .content {
+	text-align: center;
+}
+.footer .icons > li {
+	display: inline-block;
+	border-radius: 50%;
+	border: 1px solid;
+}
+
 button {
     width: 9.688rem;
     background-color: #f15a29;
