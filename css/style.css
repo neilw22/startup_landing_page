@@ -208,6 +208,16 @@ body {
 .footer .icons > li:hover{
 	cursor: pointer;
 }
+.footer .twitter {
+	color: lightblue;
+}
+.footer .facebook {
+	color: blue;
+}
+.footer .instagram {
+	color: darkblue;
+}
+
 
 button {
     width: 9.688rem;
