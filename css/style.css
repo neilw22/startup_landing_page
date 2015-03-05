@@ -1,10 +1,4 @@
-/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -51,6 +45,13 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 /* End of Reset*/
 
@@ -150,8 +151,9 @@ body {
 	overflow: hidden;
 	padding-bottom: 5rem;
 }
-.cases .content{
+.cases .content {
 	margin-top: 7.875rem;
+	text-align: center;
 }
 .cases h2 {
 	font-size: 2.75rem;
@@ -165,8 +167,8 @@ body {
 	margin: 2.5rem 0px 1.875rem;
 }
 .pictures li {
-	display: inline-block;
-	padding: 0.5rem;
+	width: 33.3333333%;
+	float: left;
 	font-size: 1.7rem;
 }
 .pictures img {
@@ -174,28 +176,37 @@ body {
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 }
-.table {
-	display: table;
-	margin: 0 auto;
-}
+
 
 /*Footer Section*/
 
 .footer {
 	background-color: white;
 	background-size: cover;
-	border-style: solid;
-	border-top-width: 1px;
 	padding-bottom: 7rem;
 	padding-top: 7rem;
 }
 .footer .content {
 	text-align: center;
 }
+.footer .content hr {
+	border-top: 1px solid lightgrey;
+}
+.footer .content > p {
+	color: lightgrey;
+}
 .footer .icons > li {
 	display: inline-block;
-	border-radius: 50%;
-	border: 1px solid;
+	border-radius: 1.25rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	border: 1px solid #eaebec;
+	margin: 1.25rem 5px;
+	padding: 0.625rem 0;
+	text-align: center;
+}
+.footer .icons > li:hover{
+	cursor: pointer;
 }
 
 button {
